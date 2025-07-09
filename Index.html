@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Play Free Online Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Game<span>Hub</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Play Free Online Games</h1>
+            <p>Discover thousands of exciting games across all genres. Challenge your friends or play solo - the fun never stops!</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for games...">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Popular Categories</h2>
+            <div class="category-list">
+                <div class="category">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Puzzle</h3>
+                </div>
+                <div class="category">
+                    <i class="fas fa-chess"></i>
+                    <h3>Strategy</h3>
+                </div>
+                <div class="category">
+                    <i class="fas fa-car"></i>
+                    <h3>Racing</h3>
+                </div>
+                <div class="category">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Action</h3>
+                </div>
+                <div class="category">
+                    <i class="fas fa-running"></i>
+                    <h3>Sports</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="games">
+            <h2>Featured Games</h2>
+            <div class="game-grid">
+                <div class="game-card" data-game="puzzle">
+                    <img src="assets/images/puzzle.jpg" alt="Puzzle Game">
+                    <div class="game-info">
+                        <h3>Magic Puzzle</h3>
+                        <p>Rearrange the tiles to solve the puzzle. Challenge your brain!</p>
+                        <a class="play-btn">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card" data-game="chess">
+                    <img src="assets/images/chess.jpg" alt="Chess Game">
+                    <div class="game-info">
+                        <h3>Royal Chess</h3>
+                        <p>Classic chess game with beautiful pieces. Play against the AI.</p>
+                        <a class="play-btn">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card" data-game="car">
+                    <img src="assets/images/car-racing.jpg" alt="Car Racing">
+                    <div class="game-info">
+                        <h3>Speed Racer</h3>
+                        <p>High-speed racing game with realistic physics. Avoid obstacles!</p>
+                        <a class="play-btn">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card" data-game="bike">
+                    <img src="assets/images/bike.jpg" alt="Bike Game">
+                    <div class="game-info">
+                        <h3>Bike Adventure</h3>
+                        <p>Ride through challenging terrain. Jump over obstacles!</p>
+                        <a class="play-btn">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Game Modals -->
+    <div class="game-modal" id="puzzle-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Magic Puzzle</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="game-container">
+                <div id="puzzle-game">
+                    <div class="puzzle-board" id="puzzle-board"></div>
+                    <div class="puzzle-controls">
+                        <button id="shuffle-btn" class="play-btn">Shuffle</button>
+                        <button id="reset-btn" class="play-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-modal" id="chess-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Royal Chess</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="game-container">
+                <div id="chess-game">
+                    <div class="chess-board" id="chess-board"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-modal" id="car-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Speed Racer</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="game-container">
+                <div id="car-game">
+                    <div class="road"></div>
+                    <div class="car" id="car"></div>
+                    <div class="score-display">Score: <span id="car-score">0</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-modal" id="bike-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Bike Adventure</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="game-container">
+                <div id="bike-game">
+                    <div class="ground"></div>
+                    <div class="bike" id="bike"></div>
+                    <div class="bike-score">Score: <span id="bike-score">0</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
