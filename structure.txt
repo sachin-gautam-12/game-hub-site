@@ -1,0 +1,13 @@
+GameHub/
+├── index.html
+├── README.md
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       ├── puzzle.jpg
+│       ├── chess.jpg
+│       ├── car-racing.jpg
+│       └── bike.jpg
